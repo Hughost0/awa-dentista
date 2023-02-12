@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/Hughost0/awa-dentista/pkg/config"
+	"github.com/Hughost0/awa-dentista/pkg/handlers"
+	"github.com/Hughost0/awa-dentista/pkg/render"
 	"github.com/alexedwards/scs/v2"
-	"github.com/awa-nashe/paginadepapa/pkg/config"
-	"github.com/awa-nashe/paginadepapa/pkg/handlers"
-	"github.com/awa-nashe/paginadepapa/pkg/render"
 )
 
 const portnumber = ":8080"

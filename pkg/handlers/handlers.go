@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/Hughost0/awa-dentistaa/pkg/config"
-	"github.com/Hughost0/awa-dentistaa/pkg/models"
-	"github.com/Hughost0/awa-dentistaa/pkg/render"
+	"github.com/Hughost0/awa-dentista/pkg/config"
+	"github.com/Hughost0/awa-dentista/pkg/models"
+	"github.com/Hughost0/awa-dentista/pkg/render"
 )
 
 // TemplateData holds data sent from handlers to templates
@@ -52,4 +52,9 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "about.page.tmpl", &models.TemplateData{
 		StringMap: stringMap,
 	})
+}
+
+func (m *Repository) Appointments(w http.ResponseWriter, r *http.Request) {
+	stringMap := make(map[string]string)
+	stringMap["cita reserver "]
 }

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/Hughost0/pkg/config"
-	"github.com/Hughost0/pkg/models"
+	"github.com/Hughost0/awa-dentista/pkg/config"
+	"github.com/Hughost0/awa-dentista/pkg/models"
 )
 
 var functions = template.FuncMap{}

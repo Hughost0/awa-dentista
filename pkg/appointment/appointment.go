@@ -1,4 +1,4 @@
-package main
+package appointment
 
 import (
 	"fmt"
@@ -42,7 +42,7 @@ func (s *Schedule) AddAppointment(appointment Appointment) error {
 func main() {
 	schedule := NewSchedule("Dr. Smith")
 	appointment1 := NewAppointment(time.Date(2023, 02, 12, 14, 0, 0, 0, time.UTC), "Jane Doe", "Dr. Smith")
-	err := schedule.AddAppointment(appointment1)
+	err := schedule.AddAppointment(appointment)
 	if err != nil {
 		fmt.Println(err)
 	} else {
